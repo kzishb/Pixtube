@@ -594,7 +594,7 @@ fun FlowApp(
         }
 
         DonationPromptHost(
-            enabled = needsOnboarding == false && !isInPipMode && !playerVisible,
+            enabled = false, // Pixtube: the popup pointed to the original developer, so it stays off
             onNavigateToDonations = { navController.navigate("donations") },
         )
     }
